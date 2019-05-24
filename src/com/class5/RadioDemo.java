@@ -12,8 +12,9 @@ public class RadioDemo {
 		
 		System.setProperty("webdriver.chrome.driver", "/Users/mahri/Selenium/chromedriver");
 		WebDriver driver=new ChromeDriver();
-		driver.manage().window().fullscreen();
+		//driver.manage().window().fullscreen();
 		driver.get("https://www.toolsqa.com/automation-practice-form/");
+		
 		WebElement maleRadio = driver.findElement(By.id("sex-0"));
 		System.out.println(maleRadio.isDisplayed()); // true
 		System.out.println(maleRadio.isEnabled()); // true 
@@ -49,7 +50,7 @@ public class RadioDemo {
 			}	
 		}
 		Thread.sleep(3000);
-		driver.quit();
+		//driver.quit();
 	
 		
 	}

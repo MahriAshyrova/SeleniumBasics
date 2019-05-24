@@ -19,7 +19,7 @@ public class JSAlertHandling {
         driver.findElement(By.linkText("Switch to")).click();
         driver.findElement(By.id("alert")).click();
         Thread.sleep(2000);
-        //if we do not handle alert we will get UnhandledAlertException
+        //if we do not handle alert we will get UnHandledAlertException
         //--> unexpected alert open
         //driver.findElement(By.id("confirm")).click();
         //switch focus to the alert window
