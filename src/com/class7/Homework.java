@@ -6,7 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class Homework extends CommonMethods {
 
@@ -57,6 +57,7 @@ public class Homework extends CommonMethods {
 		driver.findElement(By.xpath("//a[starts-with(text(),'Click Here')]")).click();
 		Thread.sleep(2000);
 		Set<String> allwindows1=driver.getWindowHandles();
+				
 		Iterator<String> it1=allwindows1.iterator();
 		MultipleTitle=it1.next();
 	    String hereTitle=it1.next();

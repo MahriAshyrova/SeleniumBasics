@@ -1,6 +1,6 @@
 package com.class7;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class Test extends CommonMethods{
 

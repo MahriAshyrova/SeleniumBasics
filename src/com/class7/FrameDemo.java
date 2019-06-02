@@ -2,7 +2,7 @@ package com.class7;
 
 import org.openqa.selenium.By;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class FrameDemo extends CommonMethods {
 

@@ -12,7 +12,7 @@ public class Task1 {
 	// check all Automation Tools checkboxes are clickable and keep "Selenium WebDriver" option as selected 
 	
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/mahri/Selenium/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
 		WebDriver driver=new ChromeDriver();
 		//driver.manage().window().fullscreen();
 		driver.get("https://www.toolsqa.com/automation-practice-form/");
@@ -24,13 +24,13 @@ public class Task1 {
 			if(years.isEnabled()) {
 				years.click();
 				Thread.sleep(3000);
-				//String value=years.getAttribute("value");
-				//System.out.println(value);
+				String value=years.getAttribute("value");
+				System.out.println(value);
 				
 			}	
 		}
 		Thread.sleep(3000);
-		driver.quit();
+		//driver.quit();
 
 		
 		

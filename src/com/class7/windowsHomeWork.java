@@ -5,7 +5,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 	public class windowsHomeWork extends CommonMethods {
 	    static String Url = "https://the-internet.herokuapp.com/";

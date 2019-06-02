@@ -3,7 +3,7 @@ package com.class7;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class FrameTask extends CommonMethods{
 

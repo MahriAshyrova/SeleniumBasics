@@ -13,9 +13,9 @@ public class Task2 {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/mahri/Selenium/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
 		WebDriver driver=new ChromeDriver();
-		//driver.manage().window().fullscreen();
+		driver.manage().window().fullscreen();
 		driver.get("https://www.toolsqa.com/automation-practice-form/");
 		
 		String valueToSelect="Selenium Webdriver";
@@ -33,7 +33,7 @@ public class Task2 {
 		for(WebElement tools:toolsList) {
 		String value=tools.getAttribute("value");
 		//System.out.println(value);
-		if((!value.equals("Selenium Webdriver"))) {
+		if((!value.equals(valueToSelect))) {
 			Thread.sleep(2000);
 			tools.click();	
 		}}	

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class HoverOverTask extends CommonMethods {
 	//Task for hoverOver

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class SelectAndDeselectValues {
 //	TC 2: Select and Deselect values

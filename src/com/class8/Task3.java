@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import CommonMethods.CommonMethods;
+import utils.CommonMethods;
 
 public class Task3 extends CommonMethods {
 //	Task Three
