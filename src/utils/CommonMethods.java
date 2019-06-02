@@ -186,11 +186,11 @@ public class CommonMethods {
 		 * Method that will Method that will check if radio buttons are enabled and select the spedified radio buttons by value
 		 * @param String nameValue, String attribute, String radioValueToSelect
 		 */	
-			public static void radioButtonToSelect(List<WebElement> element, String attribute, String checkBoxValueToSelect) {	
+			public static void radioButtonToSelect(List<WebElement> element, String attribute, String radioButtonToSelect) {	
 				List<WebElement> radioButtonList=element;
 				for(WebElement radioButton:radioButtonList ) {
 					if(radioButton.isEnabled()) {
-						if(radioButton.getAttribute(attribute).equals(checkBoxValueToSelect)) {
+						if(radioButton.getAttribute(attribute).equals(radioButtonToSelect)) {
 							if(!radioButton.isSelected()) {
 								radioButton.click();
 								break;
